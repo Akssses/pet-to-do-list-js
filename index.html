@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="app">
+        <section class="greeting">
+            <h2 class="title">
+                Добро пожаловать, <input type="text" id="name" placeholder="ваше имя...">
+            </h2>
+        </section>
+
+        <section class="create-todo">
+            <h3>Создайте задачу</h3>
+            <form id="new-todo-form">
+                <input 
+                    type="text" 
+                    name="content" 
+                    id="content" 
+                    placeholder="Введите задачу"
+                >
+                <h4>Выберите категорию</h4>
+                <div class="options">
+                    <label>
+                        <input 
+                            type="radio" 
+                            name="category" 
+                            id="category1" 
+                            value="business">
+                            <span class="bubble business"></span>
+                        <div>Практика</div>
+                    </label>
+                    <label>
+                        <input 
+                            type="radio" 
+                            name="category" 
+                            id="category2" 
+                            value="personal">
+                            <span class="bubble business"></span>
+                        <div>Теория</div>
+                    </label>
+                </div>
+
+                <input type="submit"  value="Создать"/>
+            </form>
+        </section>
+
+        <section class="todo-list">
+            <h3>Список задач</h3>
+            <div class="list" id="todo-list">
+                <!-- <div class="todo-item">
+                    <label>
+                        <input type="checkbox">
+                        <span class="bubble business"></span>
+                    </label>
+                    <div class="todo-content">
+                        <input type="text" value="Make a video" readonly>
+                    </div>
+                    <div class="actions">
+                        <button class="edit material-icons">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </main>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
